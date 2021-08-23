@@ -401,6 +401,85 @@ section {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 /* ########## END OF SERVICES SECTION ########## */
+/* ########## PRICING SECTION ########## */
+.pricing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pricing .box-container .box {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+}
+.pricing .box-container .box h3 {
+  padding: 1rem;
+  background: var(--bg-color-2);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color-1);
+}
+.pricing .box-container .box .price {
+  padding-top: 2rem;
+}
+.pricing .box-container .box .price span {
+  font-size: 2rem;
+  color: var(--text-color-2);
+}
+.pricing .box-container .box .price span.amount {
+  font-size: 5rem;
+  color: var(--text-color-1);
+  font-weight: bolder;
+}
+.pricing .box-container .box ul {
+  padding: 0.5rem 0;
+  list-style: none;
+}
+.pricing .box-container .box ul li {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: var(--text-color-2);
+}
+/* ########## END OF PRICING SECTION ########## */
+/* ########## REVIEWS SECTION ########## */
+.review .review-slider {
+  padding-bottom: 2rem;
+  max-width: 1200px;
+}
+.review .slider {
+  display: flex;
+}
+.review .box {
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.review .box img {
+  height: 13rem;
+  width: 13rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+.review .box h3 {
+  color: #333;
+  font-size: 2.5rem;
+}
+.review .box p {
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.review .box .stars i {
+  color: var(--main-color);
+  font-size: 1.7rem;
+}
+/* ########## END OF REVIEWS SECTION ########## */
 
 /* ########## MEDIA QUERIES ########## */
 @media (max-width: 991px) {

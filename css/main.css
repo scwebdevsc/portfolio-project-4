@@ -467,11 +467,11 @@ section {
   margin-bottom: 1rem;
 }
 .review .box h3 {
-  color: #333;
+  color: var(--text-color-1);
   font-size: 2.5rem;
 }
 .review .box p {
-  color: #666;
+  color: var(--text-color-2);
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -480,6 +480,170 @@ section {
   font-size: 1.7rem;
 }
 /* ########## END OF REVIEWS SECTION ########## */
+/* ########## BLOG SECTION ########## */
+.blogs .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.blogs .box-container .box {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+}
+.blogs .box-container .box .image {
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: var(--bg-color-2);
+}
+.blogs .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+}
+.blogs .box-container .box:hover .image img {
+  transform: scale(1.2);
+}
+.blogs .box-container .box .content {
+  padding-top: 1rem;
+}
+.blogs .box-container .box .content h3 {
+  font-size: 2rem;
+  color: var(--text-color-1);
+  line-height: 1.5;
+}
+.blogs .box-container .box .content .icons {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1rem solid var(--text-color-2);
+  margin-top: 2rem;
+  padding-top: 1, 5rem;
+}
+.blogs .box-container .box .content .icons a {
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+}
+.blogs .box-container .box .content .icons a:hover {
+  color: var(--main-color);
+}
+.blogs .box-container .box .content .icons a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+/* ########## END OF BLOG SECTION ########## */
+/* ########## CONTACT SECTION ########## */
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact .row .image {
+  flex: 1 1 35rem;
+}
+.contact .row .image img {
+  width: 100%;
+}
+.contact .row form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.contact .row form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .row form .inputBox input,
+.contact .row form textarea {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: var(--text-color-1);
+  background: #f7f7f7;
+  text-transform: none;
+}
+.contact .row form textarea {
+  height: 15rem;
+  resize: none;
+  width: 100%;
+}
+/* ########## END OF CONTACTS SECTION ########## */
+/* ########## BRANDS SECTION ########## */
+.brand-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.brand-container .swiper-slide {
+  background: transparent;
+}
+/* ########## END OF BRANDS SECTION ########## */
+/* ########## FOOTER SECTION ########## */
+.footer {
+  background: var(--bg-color-1);
+}
+.footer .box-container {
+  /*display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1.5rem;*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+  padding: 1rem 0;
+}
+.footer .box-container .box a {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--text-color-2);
+  padding: 1rem 0;
+}
+.footer .box-container .box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+.footer .box-container .box a:hover {
+  color: var(--main-color);
+
+  padding-left: 2rem;
+}
+.footer .credit {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  border-top: 0.1rem solid var(--text-color-2);
+  color: var(--text-color-1);
+}
+.footer .credit a {
+  color: var(--main-color);
+}
+.footer .credit a:hover {
+  text-decoration: underline;
+}
+/* ########## END OF FOOTER SECTION ########## */
 
 /* ########## MEDIA QUERIES ########## */
 @media (max-width: 991px) {
@@ -523,6 +687,9 @@ section {
     font-size: 50%;
   }
   .contact form .inputBox input {
+    width: 100%;
+  }
+  .contact .row form .inputBox input {
     width: 100%;
   }
 }

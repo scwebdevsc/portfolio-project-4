@@ -583,18 +583,13 @@ section {
   margin: 0 auto;
   text-align: center;
 }
-.brand-container .swiper-slide {
-  background: transparent;
-}
+
 /* ########## END OF BRANDS SECTION ########## */
 /* ########## FOOTER SECTION ########## */
 .footer {
   background: var(--bg-color-1);
 }
 .footer .box-container {
-  /*display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-  gap: 1.5rem;*/
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;

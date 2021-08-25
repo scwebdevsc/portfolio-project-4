@@ -688,3 +688,13 @@ section {
     width: 100%;
   }
 }
+@media (max-width: 325px) {
+  .heading span {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 305px) {
+  .heading span {
+    font-size: 2.5rem;
+  }
+}

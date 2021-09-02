@@ -27,7 +27,7 @@ html {
   scroll-padding-top: 7rem;
 }
 html::-webkit-scrollbar {
-  width: 0.8rem;
+  width: 1rem;
 }
 html::-webkit-scrollbar-track {
   background: transparent;
@@ -589,28 +589,18 @@ section {
 .footer {
   background: var(--bg-color-1);
 }
-.footer .box-container {
+.footer .box-container .box {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
-.footer .box-container .box {
-  padding: 1rem 0;
-  flex: 1 1 25rem;
-}
-.footer .box-container .box h3 {
-  font-size: 2.5rem;
-  color: var(--text-color-1);
-  padding: 1rem 0;
-}
 .footer .box-container .box a {
   display: block;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: var(--text-color-2);
   padding: 1rem 0;
 }
@@ -620,8 +610,6 @@ section {
 }
 .footer .box-container .box a:hover {
   color: var(--main-color);
-
-  padding-left: 2rem;
 }
 .footer .credit {
   text-align: center;
@@ -652,6 +640,12 @@ section {
     padding: 2rem;
   }
 }
+@media (max-width: 860px) {
+.pricing .box-container {
+ grid-template-columns: 1fr;
+
+}
+}
 @media (max-width: 768px) {
   .header .navbar {
     right: 2rem;
@@ -675,6 +669,9 @@ section {
   }
   .header .search-form.active {
     transform: scale(1);
+  }
+  .footer .box-container .box {
+    flex-direction: column;
   }
 }
 @media (max-width: 450px) {
